@@ -345,10 +345,6 @@ const scrollToMembership = () => {
   display: flex;
   justify-content: center;
   animation: fadeIn 1s ease-out 0.3s both;
-  
-  @media (max-width: 1024px) {
-    order: -1;
-  }
 }
 
 .phone-mockup {
