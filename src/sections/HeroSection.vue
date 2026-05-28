@@ -141,7 +141,17 @@ const getParticleStyle = (index) => {
 }
 
 const handleExperience = () => {
-  document.querySelector('#download')?.scrollIntoView({ behavior: 'smooth' })
+  const downloadSection = document.querySelector('#download')
+  if (downloadSection) {
+    const navbarHeight = 80
+    const elementPosition = downloadSection.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - navbarHeight
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
 }
 
 const scrollToMembership = () => {
