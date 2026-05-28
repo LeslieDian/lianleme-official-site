@@ -244,10 +244,6 @@ const handleDownload = (platform) => {
 .download-right {
   display: flex;
   justify-content: center;
-  
-  @media (max-width: 1024px) {
-    order: -1;
-  }
 }
 
 .phone-preview {
