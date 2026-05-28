@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <Navbar />
-    <AICapabilities />
     <HeroSection />
+    <AICapabilities />
     <MembershipSection />
     <VisionSection />
     <DownloadSection />
