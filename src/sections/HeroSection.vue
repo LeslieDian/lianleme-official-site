@@ -62,7 +62,6 @@
               <div class="phone-notch"></div>
               <div class="phone-screen">
                 <div class="screen-content">
-                  <!-- AI 对话界面 -->
                   <div class="ai-chat">
                     <div class="chat-message user">
                       <div class="message-bubble">我想在3个月内减脂10斤</div>
@@ -95,7 +94,6 @@
               </div>
             </div>
             
-            <!-- 浮动数据卡片 -->
             <div class="floating-card card-1">
               <div class="card-icon">💪</div>
               <div class="card-content">
@@ -143,13 +141,7 @@ const getParticleStyle = (index) => {
 }
 
 const handleExperience = () => {
-  // 下载打包的APP
-  const link = document.createElement('a')
-  link.href = '/app/trainyet.apk' // 将打包好的APK放在 public/app/ 目录下
-  link.download = 'TrainYet.apk'
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
+  document.querySelector('#download')?.scrollIntoView({ behavior: 'smooth' })
 }
 
 const scrollToMembership = () => {
