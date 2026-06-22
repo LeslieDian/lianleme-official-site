@@ -81,6 +81,30 @@
         <div class="footer-copyright">
           <p>© 2026 TrainYet / 练了么. All rights reserved.</p>
           <p class="footer-domain">lianleme.top</p>
+          <div class="footer-records" aria-label="网站备案信息">
+            <p class="footer-record-item">
+              <span class="footer-record-label">ICP备案：</span>
+              <a
+                class="footer-record-link"
+                href="https://beian.miit.gov.cn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                陕ICP备2026014815号-1
+              </a>
+            </p>
+            <p class="footer-record-item">
+              <span class="footer-record-label">公安备案：</span>
+              <a
+                class="footer-record-link"
+                href="https://beian.mps.gov.cn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                陕公网安备61011602000837号
+              </a>
+            </p>
+          </div>
         </div>
         <div class="footer-badge">
           <span>Made with</span>
@@ -243,6 +267,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-lg);
   padding-top: var(--spacing-lg);
   border-top: 1px solid var(--border-color);
   
@@ -264,6 +289,37 @@
 .footer-domain {
   font-size: 12px;
   color: var(--text-quaternary);
+}
+
+.footer-records {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.footer-record-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-quaternary);
+  line-height: 1.6;
+}
+
+.footer-record-label {
+  color: var(--text-quaternary);
+}
+
+.footer-record-link {
+  color: var(--text-tertiary);
+  transition: color 0.3s ease;
+  word-break: break-all;
+
+  &:hover {
+    color: var(--text-primary);
+  }
 }
 
 .footer-badge {
